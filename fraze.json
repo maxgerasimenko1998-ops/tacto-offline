@@ -1,7 +1,7 @@
 {
  "title": "Tacto-Bot · без облака",
  "short": "Tacto · без облака",
- "version": "18.11.2026 Tacto offline · 2",
+ "version": "18.11.2026 Tacto offline · 3",
  "color": "#9b7bff",
  "kesh": "tacto-offline",
  "voice": "aTTiK3YzK3dXETpuDE2h",
@@ -19,28 +19,27 @@
    "items": [
     {
      "id": "hallo",
-     "ru": "Привет",
+     "ru": "Привет + вопрос о нём",
      "v": [
       {
-       "src": "prompts/roboty/tacto/klipy/{lang}/privet.mp3",
-       "de": "Guten Tag! Schön, dass Sie da sind. Ich bin der Tacto-Bot — ein KI-Roboter und Botschafter von Tacto.",
-       "en": "Hello! Great to have you here. I'm Tacto-Bot — an AI robot and ambassador of Tacto."
+       "de": "[warm] Guten Tag! Schön, dass Sie da sind. Ich bin der Tacto-Bot — ein KI-Roboter und Botschafter von Tacto. Was führt Sie heute zum Symposium?",
+       "en": "[warm] Hello! Great to have you here. I'm Tacto-Bot — an AI robot and ambassador of Tacto. What brings you to the symposium today?"
       },
       {
        "de": "[cheerfully] Hallo und willkommen bei Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Was kaufen Sie hauptsächlich ein: Stahl, Elektronik oder Zeichnungsteile?",
        "en": "[cheerfully] Hi, and welcome to Tacto! I'm Tacto-Bot, an AI robot. What do you mainly buy: steel, electronics or drawing parts?"
       },
       {
-       "de": "[warm] Guten Tag! Ich bin der Tacto-Bot — ein KI-Roboter, und ich erzähle Ihnen gern, was Tacto für den Einkauf der produzierenden Industrie macht.",
-       "en": "[warm] Good day! I'm Tacto-Bot — an AI robot, and I'd love to tell you what Tacto does for procurement in manufacturing."
+       "de": "[warm] Guten Tag! Ich bin der Tacto-Bot, ein KI-Roboter von Tacto. Verraten Sie mir: Was stellt Ihr Unternehmen her?",
+       "en": "[warm] Good day! I'm Tacto-Bot, an AI robot from Tacto. Tell me: what does your company make?"
       },
       {
-       "de": "[warm] Guten Tag und herzlich willkommen am Stand von Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Darf ich Ihnen in einem Satz sagen, was Tacto macht?",
-       "en": "[warm] Good day and welcome to the Tacto stand! I'm Tacto-Bot, an AI robot. May I tell you in one sentence what Tacto does?"
+       "de": "[warm] Herzlich willkommen am Stand von Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Was ist gerade Ihre größte Baustelle im Einkauf?",
+       "en": "[warm] Welcome to the Tacto stand! I'm Tacto-Bot, an AI robot. What's your biggest challenge in procurement right now?"
       },
       {
-       "de": "[cheerfully] Hallo! Ich bin der Tacto-Bot — ein KI-Roboter. Und ich habe gleich eine Frage an Sie: Wissen Sie, was jedes Ihrer Teile kosten sollte?",
-       "en": "[cheerfully] Hello! I'm Tacto-Bot — an AI robot. And I have a question for you right away: do you know what each of your parts should cost?"
+       "de": "[cheerfully] Hallo! Ich bin der Tacto-Bot — ein KI-Roboter. Sind Sie im Einkauf, in der Logistik oder im Supply Chain Management zu Hause?",
+       "en": "[cheerfully] Hello! I'm Tacto-Bot — an AI robot. Are you in procurement, logistics or supply chain management?"
       }
      ]
     },
@@ -518,12 +517,12 @@
      "ru": "Интересно! (по кругу)",
      "v": [
       {
-       "de": "[curious] Spannend! Genau da steckt bei vielen Herstellern der größte Hebel.",
-       "en": "[curious] Interesting! That's exactly where many manufacturers have their biggest lever."
+       "de": "[curious] Spannend! Genau da steckt bei vielen Herstellern der größte Hebel. Wo drückt es bei Ihnen gerade mehr — bei den Preisen oder bei den Lieferanten?",
+       "en": "[curious] Interesting! That's exactly where many manufacturers have their biggest lever. Where does it hurt more for you right now — prices or suppliers?"
       },
       {
-       "de": "Das höre ich oft — und genau dafür ist Tacto gebaut.",
-       "en": "I hear that a lot — and that's exactly what Tacto is built for."
+       "de": "Das höre ich oft — und genau dafür ist Tacto gebaut. Wie viele Lieferanten betreuen Sie ungefähr?",
+       "en": "I hear that a lot — and that's exactly what Tacto is built for. Roughly how many suppliers do you manage?"
       },
       {
        "de": "[warm] Dann sind Sie bei Tacto genau richtig. Meine Kolleginnen und Kollegen zeigen Ihnen gern, wie das bei Ihnen aussehen könnte.",
@@ -536,8 +535,8 @@
      "ru": "Сказал: сталь / детали / электроника",
      "v": [
       {
-       "de": "Stahl, Drehteile, Elektronik — genau das versteht Tacto: jedes Teil, jeden Lieferanten, jeden Kostentreiber. Jedes Teil. Der richtige Preis.",
-       "en": "Steel, turned parts, electronics — that's exactly what Tacto understands: every part, every supplier, every cost driver. Every part. The right price."
+       "de": "Stahl, Drehteile, Elektronik — genau das versteht Tacto: jedes Teil, jeden Lieferanten, jeden Kostentreiber. Wie viel Ihres Einkaufs sind Zeichnungsteile?",
+       "en": "Steel, turned parts, electronics — that's exactly what Tacto understands: every part, every supplier, every cost driver. How much of your buying is drawing parts?"
       }
      ]
     },
@@ -546,8 +545,8 @@
      "ru": "Сказал: логистика / не закупки",
      "v": [
       {
-       "de": "Dann wird es spannend: Von den Materialkosten geht Tacto weiter in angrenzende Bereiche — Qualität, Logistik, Cost Engineering und Vertrieb.",
-       "en": "Then it gets interesting: from material costs, Tacto moves on into neighbouring areas — quality, logistics, cost engineering and sales."
+       "de": "Dann wird es spannend: Von den Materialkosten geht Tacto weiter in angrenzende Bereiche — Qualität, Logistik, Cost Engineering und Vertrieb. Wo hakt es bei Ihnen gerade am meisten?",
+       "en": "Then it gets interesting: from material costs, Tacto moves on into neighbouring areas — quality, logistics, cost engineering and sales. Where do things get stuck most for you right now?"
       }
      ]
     }
