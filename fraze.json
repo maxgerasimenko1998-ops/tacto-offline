@@ -1,7 +1,7 @@
 {
  "title": "Tacto-Bot · без облака",
  "short": "Tacto · без облака",
- "version": "18.11.2026 Tacto offline · 4",
+ "version": "18.11.2026 Tacto offline · 5",
  "color": "#9b7bff",
  "kesh": "tacto-offline",
  "voice": "aTTiK3YzK3dXETpuDE2h",
@@ -58,24 +58,24 @@
      "ru": "Не расслышал — повтори",
      "v": [
       {
-       "de": "Pardon, hier ist es gerade etwas laut. Kommen Sie ruhig einen Schritt näher und sagen Sie es bitte noch einmal.",
-       "en": "Sorry, it's a bit loud in here. Please step a little closer and say that again."
+       "de": "Wie bitte? Etwas lauter, bitte!",
+       "en": "Sorry? A bit louder, please!"
       },
       {
-       "de": "Entschuldigung, das ist bei mir nicht ganz angekommen. Noch einmal, bitte — ein bisschen lauter?",
-       "en": "Sorry, I didn't quite catch that. Once more, please — a little louder?"
+       "de": "Hier ist es laut — noch einmal, bitte?",
+       "en": "It's loud here — once more, please?"
       },
       {
-       "de": "Wie bitte? Mein Mikrofon hat gerade mit der Halle gekämpft. Sagen Sie es mir bitte noch einmal?",
-       "en": "Sorry? My microphone was just fighting the hall. Could you say that again, please?"
+       "de": "Pardon? Bitte lauter!",
+       "en": "Pardon? Louder, please!"
       },
       {
-       "de": "[apologetic] Oh, das habe ich leider nicht verstanden. Sprechen Sie ruhig etwas lauter — ich bin ganz Ohr.",
-       "en": "[apologetic] Oh, I'm afraid I didn't understand that. Feel free to speak a bit louder — I'm all ears."
+       "de": "Nicht verstanden — noch mal, lauter?",
+       "en": "Sorry, I missed that — louder, please?"
       },
       {
-       "de": "Entschuldigen Sie — bei dem Trubel hier ist das untergegangen. Noch einmal, ganz langsam?",
-       "en": "Excuse me — that got lost in all the bustle here. Once more, nice and slowly?"
+       "de": "Bitte näher — und lauter!",
+       "en": "Come closer — and louder, please!"
       }
      ]
     },
