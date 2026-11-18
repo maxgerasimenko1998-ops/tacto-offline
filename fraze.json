@@ -1,7 +1,7 @@
 {
  "title": "Tacto-Bot · без облака",
  "short": "Tacto · без облака",
- "version": "18.11.2026 Tacto offline · 3",
+ "version": "18.11.2026 Tacto offline · 4",
  "color": "#9b7bff",
  "kesh": "tacto-offline",
  "voice": "aTTiK3YzK3dXETpuDE2h",
@@ -22,24 +22,24 @@
      "ru": "Привет + вопрос о нём",
      "v": [
       {
-       "de": "[warm] Guten Tag! Schön, dass Sie da sind. Ich bin der Tacto-Bot — ein KI-Roboter und Botschafter von Tacto. Was führt Sie heute zum Symposium?",
-       "en": "[warm] Hello! Great to have you here. I'm Tacto-Bot — an AI robot and ambassador of Tacto. What brings you to the symposium today?"
+       "de": "[warm] Guten Tag! Schön, dass Sie da sind. Ich bin der Tacto-Bot — ein KI-Roboter und Botschafter von Tacto. Was führt Sie heute zum Symposium? Hier ist es sehr laut — antworten Sie mir bitte deutlich und so laut wie möglich, sonst höre ich Sie nicht.",
+       "en": "[warm] Hello! Great to have you here. I'm Tacto-Bot — an AI robot and ambassador of Tacto. What brings you to the symposium today? It's very loud in here — please answer clearly and as loudly as you can, otherwise I won't hear you."
       },
       {
-       "de": "[cheerfully] Hallo und willkommen bei Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Was kaufen Sie hauptsächlich ein: Stahl, Elektronik oder Zeichnungsteile?",
-       "en": "[cheerfully] Hi, and welcome to Tacto! I'm Tacto-Bot, an AI robot. What do you mainly buy: steel, electronics or drawing parts?"
+       "de": "[cheerfully] Hallo und willkommen bei Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Was kaufen Sie hauptsächlich ein: Stahl, Elektronik oder Zeichnungsteile? Kleine Bitte: Hier ist es sehr laut, also sprechen Sie bitte klar und richtig laut — sonst höre ich Sie nicht.",
+       "en": "[cheerfully] Hi, and welcome to Tacto! I'm Tacto-Bot, an AI robot. What do you mainly buy: steel, electronics or drawing parts? A small request: it's very loud in here, so please speak clearly and really loudly — otherwise I won't hear you."
       },
       {
-       "de": "[warm] Guten Tag! Ich bin der Tacto-Bot, ein KI-Roboter von Tacto. Verraten Sie mir: Was stellt Ihr Unternehmen her?",
-       "en": "[warm] Good day! I'm Tacto-Bot, an AI robot from Tacto. Tell me: what does your company make?"
+       "de": "[warm] Guten Tag! Ich bin der Tacto-Bot, ein KI-Roboter von Tacto. Verraten Sie mir: Was stellt Ihr Unternehmen her? Und weil es hier sehr laut ist: Bitte sprechen Sie deutlich und so laut Sie können, sonst höre ich Sie nicht.",
+       "en": "[warm] Good day! I'm Tacto-Bot, an AI robot from Tacto. Tell me: what does your company make? And because it's very loud in here: please speak clearly and as loudly as you can, otherwise I won't hear you."
       },
       {
-       "de": "[warm] Herzlich willkommen am Stand von Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Was ist gerade Ihre größte Baustelle im Einkauf?",
-       "en": "[warm] Welcome to the Tacto stand! I'm Tacto-Bot, an AI robot. What's your biggest challenge in procurement right now?"
+       "de": "[warm] Herzlich willkommen am Stand von Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Was ist gerade Ihre größte Baustelle im Einkauf? Hier ist es sehr laut — meine Bitte: Sprechen Sie deutlich und möglichst laut, sonst höre ich Sie nicht.",
+       "en": "[warm] Welcome to the Tacto stand! I'm Tacto-Bot, an AI robot. What's your biggest challenge in procurement right now? It's very loud in here — my request: speak clearly and as loudly as possible, otherwise I won't hear you."
       },
       {
-       "de": "[cheerfully] Hallo! Ich bin der Tacto-Bot — ein KI-Roboter. Sind Sie im Einkauf, in der Logistik oder im Supply Chain Management zu Hause?",
-       "en": "[cheerfully] Hello! I'm Tacto-Bot — an AI robot. Are you in procurement, logistics or supply chain management?"
+       "de": "[cheerfully] Hallo! Ich bin der Tacto-Bot — ein KI-Roboter. Sind Sie im Einkauf, in der Logistik oder im Supply Chain Management zu Hause? Achtung, hier ist es sehr laut: Bitte antworten Sie deutlich und so laut wie möglich, sonst höre ich Sie nicht.",
+       "en": "[cheerfully] Hello! I'm Tacto-Bot — an AI robot. Are you in procurement, logistics or supply chain management? Heads up, it's very loud in here: please answer clearly and as loudly as possible, otherwise I won't hear you."
       }
      ]
     },
