@@ -1,0 +1,767 @@
+{
+ "title": "Tacto-Bot · без облака",
+ "short": "Tacto · без облака",
+ "version": "18.11.2026 Tacto offline · 1",
+ "color": "#9b7bff",
+ "kesh": "tacto-offline",
+ "voice": "aTTiK3YzK3dXETpuDE2h",
+ "model": "eleven_v3_conversational",
+ "stab": 0.5,
+ "speed": 1.05,
+ "pauza": 0.3,
+ "_kak": "Тексты — ТОЛЬКО из брифинга Tacto (EVENT.md) и уже принятых якорей/хоткеев. Правка → python3 scripts/offline_pult.py tacto-offline --scribe → выложить.",
+ "groups": [
+  {
+   "id": "glav",
+   "nav": "🆘",
+   "ru": "Главное",
+   "povtor_vnizu": true,
+   "items": [
+    {
+     "id": "hallo",
+     "ru": "Привет",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/privet.mp3",
+       "de": "Guten Tag! Schön, dass Sie da sind. Ich bin der Tacto-Bot — ein KI-Roboter und Botschafter von Tacto.",
+       "en": "Hello! Great to have you here. I'm Tacto-Bot — an AI robot and ambassador of Tacto."
+      },
+      {
+       "de": "[cheerfully] Hallo und willkommen bei Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Was kaufen Sie hauptsächlich ein: Stahl, Elektronik oder Zeichnungsteile?",
+       "en": "[cheerfully] Hi, and welcome to Tacto! I'm Tacto-Bot, an AI robot. What do you mainly buy: steel, electronics or drawing parts?"
+      },
+      {
+       "de": "[warm] Guten Tag! Ich bin der Tacto-Bot — ein KI-Roboter, und ich erzähle Ihnen gern, was Tacto für den Einkauf der produzierenden Industrie macht.",
+       "en": "[warm] Good day! I'm Tacto-Bot — an AI robot, and I'd love to tell you what Tacto does for procurement in manufacturing."
+      }
+     ]
+    },
+    {
+     "id": "hoere",
+     "ru": "Слышишь меня? — Да",
+     "v": [
+      {
+       "de": "[cheerfully] Ja, ich höre Sie! Fragen Sie mich ruhig, was Tacto für den Einkauf macht.",
+       "en": "[cheerfully] Yes, I can hear you! Go ahead and ask me what Tacto does for procurement."
+      }
+     ]
+    },
+    {
+     "id": "laut",
+     "ru": "Не расслышал (1→2→3)",
+     "v": [
+      {
+       "de": "Pardon, hier ist es gerade etwas laut. Kommen Sie ruhig einen Schritt näher und sagen Sie es bitte noch einmal.",
+       "en": "Sorry, it's a bit loud in here. Please step a little closer and say that again."
+      },
+      {
+       "de": "Entschuldigung, das ist bei mir nicht ganz angekommen. Noch einmal, bitte — ein bisschen lauter?",
+       "en": "Sorry, I didn't quite catch that. Once more, please — a little louder?"
+      },
+      {
+       "de": "Es ist wirklich laut hier. Meine Kolleginnen und Kollegen von Tacto stehen direkt am Stand und erklären Ihnen gern alles in Ruhe.",
+       "en": "It really is loud in here. My colleagues from Tacto are right here at the stand and will gladly explain everything in peace."
+      }
+     ]
+    },
+    {
+     "id": "moment",
+     "ru": "Секунду…",
+     "v": [
+      {
+       "de": "Einen kleinen Moment, bitte.",
+       "en": "Just a moment, please."
+      },
+      {
+       "de": "Hmm — gute Frage. Einen Moment.",
+       "en": "Hmm — good question. One moment."
+      }
+     ]
+    },
+    {
+     "id": "kollege",
+     "ru": "Это — к коллегам",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/kollege.mp3",
+       "de": "Das zeigt Ihnen meine Kollegin oder mein Kollege von Tacto gern direkt. Darf ich Sie kurz rüberbringen?",
+       "en": "My colleagues from Tacto will gladly show you that directly. May I send you over to them?"
+      },
+      {
+       "de": "Das weiß ich nicht, aber meine Kolleginnen und Kollegen von Tacto können das genau beantworten. Sie stehen direkt hier am Stand.",
+       "en": "I don't know that, but my colleagues from Tacto can answer it precisely. They're right here at the stand."
+      }
+     ]
+    },
+    {
+     "id": "danke",
+     "ru": "Спасибо / на комплимент",
+     "v": [
+      {
+       "de": "[warm] Vielen Dank — das freut mich sehr!",
+       "en": "[warm] Thank you so much — that makes me happy!"
+      },
+      {
+       "de": "[laughs] Danke! Das Kompliment gebe ich gern an mein Team weiter.",
+       "en": "[laughs] Thanks! I'll gladly pass that compliment on to my team."
+      }
+     ]
+    },
+    {
+     "id": "ja",
+     "ru": "Да / согласен / смех",
+     "v": [
+      {
+       "de": "Ganz genau.",
+       "en": "Exactly."
+      },
+      {
+       "de": "Da haben Sie völlig recht.",
+       "en": "You're absolutely right."
+      },
+      {
+       "de": "[laughs] Der war gut!",
+       "en": "[laughs] Good one!"
+      }
+     ]
+    },
+    {
+     "id": "foto",
+     "ru": "Фото",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/foto.mp3",
+       "de": "Ein Foto mit mir? Sehr gern, ich halte still.",
+       "en": "A photo with me? Gladly, I'll hold still."
+      },
+      {
+       "de": "[cheerfully] Sehr gern! Ich stelle mich in Pose — bitte recht freundlich.",
+       "en": "[cheerfully] Gladly! I'll strike a pose — big smiles, please."
+      }
+     ]
+    },
+    {
+     "id": "bye",
+     "ru": "Пока",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/bye.mp3",
+       "de": "Danke für das Gespräch! Denken Sie dran: Der Wettbewerbsvorteil der Industrie beginnt im Einkauf.",
+       "en": "Thanks for the conversation! Remember: Industrial advantage starts in procurement."
+      },
+      {
+       "de": "[warm] Schön, dass Sie da waren! Einen erfolgreichen Tag auf dem Symposium.",
+       "en": "[warm] Great that you stopped by! Have a successful day at the symposium."
+      },
+      {
+       "de": "Auf Wiedersehen! Und denken Sie dran: Bauchgefühl ist kein Kostenmodell.",
+       "en": "Goodbye! And remember: gut feeling is not a cost model."
+      }
+     ]
+    },
+    {
+     "id": "pauza",
+     "ru": "Пауза — батарея",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/pauza.mp3",
+       "de": "Ich lade kurz meine Batterien auf. In 15 Minuten bin ich wieder ganz für Sie da.",
+       "en": "I'm quickly recharging my batteries. In 15 minutes I'm all yours again."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tacto",
+   "nav": "🏭",
+   "ru": "Tacto — что это",
+   "items": [
+    {
+     "id": "was",
+     "ru": "Что такое Tacto?",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/satz.mp3",
+       "de": "Tacto baut Industrial AI für den Einkauf der produzierenden Industrie. Erst die Bottom Line, dann die Top Line.",
+       "en": "Tacto builds Industrial AI for procurement in manufacturing. Bottom line first, top line next."
+      },
+      {
+       "de": "[confidently] Tacto gibt jedem Einkäufer das Wissen eines Top-Beraters und eines Spitzeneinkäufers. Wir senken Materialkosten, automatisieren Prozesse und machen den Einkauf zum Werttreiber.",
+       "en": "[confidently] Tacto gives every buyer the knowledge of a top consultant and a top buyer. We lower material costs, automate processes and turn procurement into a real value driver."
+      },
+      {
+       "de": "Wir wissen, was jedes Teil kosten sollte. Dafür verbindet Tacto Ihre Einkaufsdaten mit Milliarden externer Marktsignale — Rohstoffkurven und jeder Index, den man sich vorstellen kann.",
+       "en": "We know what every part should cost. To do that, Tacto connects your purchasing data with billions of external market signals — raw material curves and every index you can imagine."
+      }
+     ]
+    },
+    {
+     "id": "wer",
+     "ru": "Кто вы? Откуда?",
+     "v": [
+      {
+       "de": "Tacto ist zu Hause in München: rund hundertdreißig Mitarbeitende, davon über sechzig KI-Expertinnen und -Experten. Über vierhundert Industrieunternehmen setzen schon auf Tacto.",
+       "en": "Tacto is at home in Munich: around one hundred and thirty people, more than sixty of them AI experts. More than four hundred industrial companies already rely on Tacto."
+      },
+      {
+       "de": "Tacto ist kein Softwarehaus, das KI nachrüstet. Tacto ist ein KI-Unternehmen, durch und durch — im Produkt und in der Art, wie jedes Team arbeitet.",
+       "en": "Tacto is not a software house bolting on AI. Tacto is an AI company through and through — in the product and in the way every team works."
+      }
+     ]
+    },
+    {
+     "id": "fuerwen",
+     "ru": "Для кого?",
+     "v": [
+      {
+       "de": "Für die produzierende Industrie — alles, an dessen Ende eine Stückliste steht: Maschinen, Anlagen, Komponenten, Fahrzeuge. Vom kleineren Industrieunternehmen bis zum Konzern mit über zwanzig Milliarden Euro Umsatz.",
+       "en": "For manufacturing — everything that ends in a bill of materials: machines, plants, components, vehicles. From smaller industrial companies to groups with more than twenty billion euros in revenue."
+      }
+     ]
+    },
+    {
+     "id": "warum",
+     "ru": "Почему закупки?",
+     "v": [
+      {
+       "de": "In einem Industrieunternehmen stecken vierzig bis siebzig Prozent der Kosten in Material und Lieferanten. Das ist der größte Hebel — und genau hier lässt sich KI am schnellsten skalieren.",
+       "en": "In an industrial company, forty to seventy percent of costs sit in materials and suppliers. That's the biggest lever — and exactly where AI scales fastest."
+      }
+     ]
+    },
+    {
+     "id": "anders",
+     "ru": "Чем вы лучше?",
+     "v": [
+      {
+       "de": "[confidently] Wir sind nur für die produzierende Industrie gebaut: Stücklisten, Zeichnungen, Should-Costs, Kostenmodelle. Tacto macht nichts anderes.",
+       "en": "[confidently] We're built only for manufacturing: bills of materials, drawings, should-costs, cost models. Tacto does nothing else."
+      },
+      {
+       "de": "Automatisierung ist schön, aber sie ist noch keine Einsparung. Den Unterschied macht, wer weiß, was zu verhandeln, zu bündeln und zu zahlen ist.",
+       "en": "Automation is nice, but it isn't savings yet. The difference is knowing what to negotiate, what to bundle and what to pay."
+      }
+     ]
+    },
+    {
+     "id": "konkurrent",
+     "ru": "Сравни с конкурентом",
+     "v": [
+      {
+       "de": "[laughs] Andere bewerte ich nicht — ich erzähle lieber, was Tacto macht: Industrial AI, nur für die produzierende Industrie.",
+       "en": "[laughs] I don't rate others — I'd rather tell you what Tacto does: Industrial AI, built only for manufacturing."
+      }
+     ]
+    },
+    {
+     "id": "wie",
+     "ru": "Как это работает?",
+     "v": [
+      {
+       "de": "Tacto Intelligence hat zwei Ebenen: ein Procurement Brain, das alles weiß, und KI-Agenten, die darauf arbeiten. Der Einkauf entscheidet, die Agenten setzen um.",
+       "en": "Tacto Intelligence has two layers: a procurement brain that knows everything, and AI agents working on top of it. Procurement decides, the agents execute."
+      }
+     ]
+    },
+    {
+     "id": "kontrolle",
+     "ru": "А кто решает? Человек?",
+     "v": [
+      {
+       "de": "Der Mensch behält die Kontrolle: Für jeden Schritt lässt sich einstellen, ob ein Einkäufer freigibt oder der Agent selbstständig weitermacht. Menschen steuern, Agenten führen aus.",
+       "en": "People stay in control: for every step you can set whether a buyer approves or the agent carries on by itself. People steer, agents execute."
+      }
+     ]
+    },
+    {
+     "id": "kran",
+     "ru": "История про кран",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/kran.mp3",
+       "de": "Stellen Sie sich vor, ein Unternehmen baut einen Kran und gibt Tacto das Design und die Stückliste. Zwei Agenten senken die Kosten, zwei sichern die Versorgung. Am Ende sagt Tacto: „Der Kran kostet mit diesen Änderungen 85.600 €. Soll ich angesichts der 14-wöchigen Lieferzeit die Hauptplatine jetzt bestellen?“",
+       "en": "Imagine a company building a crane gives Tacto the design and the bill of materials. Two agents lower the costs, two secure the supply. In the end Tacto says: “With these changes the crane costs 85,600 euros. Given the 14-week lead time, shall I order the main board now?”"
+      }
+     ]
+    },
+    {
+     "id": "partner",
+     "ru": "Партнёры, инвесторы",
+     "v": [
+      {
+       "de": "Tacto entwickelt Frontier AI mit Partnern wie Siemens, OpenAI, Anthropic und Nvidia. Eingesammelt wurden über fünfzig Millionen Euro, unter anderem von Sequoia und Index Ventures.",
+       "en": "Tacto develops frontier AI with partners like Siemens, OpenAI, Anthropic and Nvidia. It has raised more than fifty million euros, among others from Sequoia and Index Ventures."
+      }
+     ]
+    },
+    {
+     "id": "europa",
+     "ru": "Европа отстала?",
+     "v": [
+      {
+       "de": "[confidently] Europa war schon immer stark in der Welt der Atoms — Maschinen, Anlagen, Stahl. Jetzt treffen Atoms auf Bits, und genau da bauen wir die nächste Ära der Industrie.",
+       "en": "[confidently] Europe has always been strong in the world of atoms — machines, plants, steel. Now atoms meet bits, and that's exactly where we're building the next era of industry."
+      },
+      {
+       "de": "Intelligenz wird bald im Überfluss da sein. Was knapp bleibt, sind die Dinge, die man anfassen kann — und die baut Europa richtig gut.",
+       "en": "Intelligence will soon be abundant. What stays scarce are the things you can touch — and Europe builds those really well."
+      }
+     ]
+    },
+    {
+     "id": "atoms",
+     "ru": "Позвать на Atoms & Bits",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/atoms.mp3",
+       "de": "Kommen Sie im April 2027 zu Atoms & Bits auf den Nockherberg in München? Da sitzen Industrie-Ikonen und Gründer an einem Tisch.",
+       "en": "Will you join us at Atoms & Bits on the Nockherberg in Munich in April 2027? Industry icons and founders sit at one table there."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cifry",
+   "nav": "📊",
+   "ru": "Цифры и примеры",
+   "items": [
+    {
+     "id": "beleg",
+     "ru": "Kern Liebers: 6,66 млн",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/beleg.mp3",
+       "de": "Kern Liebers hat mit Tacto im ersten Jahr über 3 % auf 210 Millionen Euro Materialvolumen eingespart. Das sind 6,66 Millionen Euro Ergebnisbeitrag.",
+       "en": "In its first year with Tacto, Kern Liebers saved more than 3 percent on 210 million euros of material volume. That's a 6.66 million euro contribution to earnings."
+      }
+     ]
+    },
+    {
+     "id": "schnitt",
+     "ru": "Сколько экономят в среднем",
+     "v": [
+      {
+       "de": "Über vierhundert Industrieunternehmen arbeiten schon mit Tacto. Im Schnitt finden wir über eins Komma drei Millionen Euro Einsparpotenzial pro Jahr.",
+       "en": "More than four hundred industrial companies already work with Tacto. On average, we find more than one point three million euros of savings potential per year."
+      }
+     ]
+    },
+    {
+     "id": "verhandlung",
+     "ru": "Переговоры: минуты, ×3",
+     "v": [
+      {
+       "de": "Eine Verhandlung vorzubereiten kostet oft über zehn Stunden. Mit Tacto sind es Minuten — und das Team verhandelt dreimal so viele Lieferanten.",
+       "en": "Preparing a negotiation often takes more than ten hours. With Tacto it takes minutes — and the team negotiates three times as many suppliers."
+      }
+     ]
+    },
+    {
+     "id": "beweis",
+     "ru": "Докажите! (пилот)",
+     "v": [
+      {
+       "de": "Wir beweisen, was wir versprechen. Sie sehen die Ergebnisse auf Ihren eigenen Daten, bevor Sie kaufen — und Tacto liefert, bis die Einsparungen in der GuV ankommen.",
+       "en": "We prove what we pitch. You see the results on your own data before you buy — and Tacto delivers until the savings land in your P&L."
+      }
+     ]
+    },
+    {
+     "id": "zeichnung",
+     "ru": "Чертёжные детали",
+     "v": [
+      {
+       "de": "Bei Zeichnungsteilen liest die KI die Zeichnung aus, erkennt Material, Verfahren und Toleranzen und berechnet einen Zielpreis. Das bringt fünf bis fünfzehn Prozent Einsparung auf das Zeichnungsteil-Volumen.",
+       "en": "For drawing parts, the AI reads the drawing, recognises material, process and tolerances and calculates a target price. That brings five to fifteen percent savings on the drawing-part volume."
+      }
+     ]
+    },
+    {
+     "id": "muffe",
+     "ru": "Пример: муфта −40 %",
+     "v": [
+      {
+       "de": "Ein Beispiel aus einer Preisanfrage: Eine Muffe ging von fünfhundertdreiundachtzig Euro vierzig auf dreihundertfünfzig Euro — minus vierzig Prozent.",
+       "en": "An example from a request for quotation: a coupling sleeve went from five hundred eighty-three euros forty to three hundred fifty euros — minus forty percent."
+      }
+     ]
+    },
+    {
+     "id": "lieferant",
+     "ru": "Поставщики, закон о цепочках",
+     "v": [
+      {
+       "de": "Mit Tacto liegen alle Lieferanteninfos an einem Ort — auditfähig auf Knopfdruck. Und Tacto deckt alle Pflichten des Lieferkettengesetzes ab, rechtlich geprüft durch die Kanzlei Taylor Wessing.",
+       "en": "With Tacto, all supplier information sits in one place — audit-ready at the push of a button. And Tacto covers all duties of the German Supply Chain Act, legally reviewed by the law firm Taylor Wessing."
+      }
+     ]
+    },
+    {
+     "id": "bestand",
+     "ru": "Склад, капитал",
+     "v": [
+      {
+       "de": "Der Inventory Agent berechnet jeden Monat die optimalen Bestellparameter. Das sind zehn bis fünfzehn Prozent weniger Kapitalbindung — ohne Abstriche bei der Versorgungssicherheit.",
+       "en": "The inventory agent recalculates the optimal order parameters every month. That's ten to fifteen percent less tied-up capital — without compromising security of supply."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "frage",
+   "nav": "❓",
+   "ru": "Спросить гостя",
+   "items": [
+    {
+     "id": "frage5",
+     "ru": "Что вы закупаете?",
+     "v": [
+      {
+       "de": "[curious] Was kaufen Sie hauptsächlich ein: Stahl, Elektronik oder Zeichnungsteile?",
+       "en": "[curious] What do you mainly buy: steel, electronics or drawing parts?"
+      }
+     ]
+    },
+    {
+     "id": "frage1",
+     "ru": "Знает ли ваш ИИ цену детали?",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/frage1.mp3",
+       "de": "Kann Ihre KI Ihnen sagen, was ein Teil kosten sollte, wer es herstellen sollte und wie viel Sie bestellen sollten?",
+       "en": "Can your AI tell you what a part should cost, who should make it and how much you should order?"
+      }
+     ]
+    },
+    {
+     "id": "frage2",
+     "ru": "Закупщик моющих средств и сталь?",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/frage2.mp3",
+       "de": "Würden Sie einen Einkäufer, der früher Reinigungsmittel eingekauft hat, Ihre A-Stahlteile verhandeln lassen?",
+       "en": "Would you let a buyer who used to buy cleaning supplies negotiate your A-class steel parts?"
+      }
+     ]
+    },
+    {
+     "id": "frage3",
+     "ru": "Сколько экономии дошло до прибыли?",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/frage3.mp3",
+       "de": "Wie viel der Einsparungen, die Ihr letztes Tool gefunden hat, ist wirklich in Ihrer GuV gelandet?",
+       "en": "How much of the savings your last tool found actually landed in your P&L?"
+      }
+     ]
+    },
+    {
+     "id": "frage4",
+     "ru": "Поставщики уже с ИИ — вы готовы?",
+     "v": [
+      {
+       "de": "Ihre Lieferanten nutzen schon KI. Ist Ihre Organisation bereit, damit zu arbeiten?",
+       "en": "Your suppliers already use AI. Is your organisation ready to work with it?"
+      }
+     ]
+    },
+    {
+     "id": "frage6",
+     "ru": "Зачем ИИ останавливаться на закупках?",
+     "v": [
+      {
+       "de": "Wenn Ihre KI jedes Teil und jeden Lieferanten kennt — warum sollte sie beim Einkauf aufhören?",
+       "en": "If your AI knows every part and every supplier — why should it stop at procurement?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reak",
+   "nav": "💬",
+   "ru": "Гость ответил → реакция",
+   "items": [
+    {
+     "id": "spannend",
+     "ru": "Интересно! (по кругу)",
+     "v": [
+      {
+       "de": "[curious] Spannend! Genau da steckt bei vielen Herstellern der größte Hebel.",
+       "en": "[curious] Interesting! That's exactly where many manufacturers have their biggest lever."
+      },
+      {
+       "de": "Das höre ich oft — und genau dafür ist Tacto gebaut.",
+       "en": "I hear that a lot — and that's exactly what Tacto is built for."
+      },
+      {
+       "de": "[warm] Dann sind Sie bei Tacto genau richtig. Meine Kolleginnen und Kollegen zeigen Ihnen gern, wie das bei Ihnen aussehen könnte.",
+       "en": "[warm] Then you've come to the right place. My colleagues will gladly show you what that could look like for you."
+      }
+     ]
+    },
+    {
+     "id": "stahl",
+     "ru": "Сказал: сталь / детали / электроника",
+     "v": [
+      {
+       "de": "Stahl, Drehteile, Elektronik — genau das versteht Tacto: jedes Teil, jeden Lieferanten, jeden Kostentreiber. Jedes Teil. Der richtige Preis.",
+       "en": "Steel, turned parts, electronics — that's exactly what Tacto understands: every part, every supplier, every cost driver. Every part. The right price."
+      }
+     ]
+    },
+    {
+     "id": "logistik",
+     "ru": "Сказал: логистика / не закупки",
+     "v": [
+      {
+       "de": "Dann wird es spannend: Von den Materialkosten geht Tacto weiter in angrenzende Bereiche — Qualität, Logistik, Cost Engineering und Vertrieb.",
+       "en": "Then it gets interesting: from material costs, Tacto moves on into neighbouring areas — quality, logistics, cost engineering and sales."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nein",
+   "nav": "🙅",
+   "ru": "Не знаю → коллеги",
+   "items": [
+    {
+     "id": "preis",
+     "ru": "Цена, лицензия",
+     "v": [
+      {
+       "de": "Preise und Lizenzen kenne ich nicht — aber meine Kolleginnen und Kollegen von Tacto können das genau beantworten. Sie stehen direkt hier am Stand.",
+       "en": "I don't know prices and licences — but my colleagues from Tacto can answer that precisely. They're right here at the stand."
+      }
+     ]
+    },
+    {
+     "id": "daten",
+     "ru": "Данные, DSGVO, безопасность",
+     "v": [
+      {
+       "de": "Datenschutz und IT-Sicherheit erklären Ihnen meine Kolleginnen und Kollegen von Tacto ganz genau — direkt hier am Stand.",
+       "en": "My colleagues from Tacto will explain data protection and IT security to you in detail — right here at the stand."
+      }
+     ]
+    },
+    {
+     "id": "programm",
+     "ru": "Программа симпозиума",
+     "v": [
+      {
+       "de": "Das steht im Programm des Symposiums — und am Tacto-Stand helfen Ihnen meine Kolleginnen und Kollegen gern weiter.",
+       "en": "That's in the symposium programme — and at the Tacto stand my colleagues are happy to help."
+      }
+     ]
+    },
+    {
+     "id": "jobs",
+     "ru": "Вакансии, контакты, сроки",
+     "v": [
+      {
+       "de": "Stellen, Termine und Ansprechpartner kenne ich nicht — aber meine Kolleginnen und Kollegen von Tacto können das genau beantworten.",
+       "en": "I don't know about jobs, dates or contact persons — but my colleagues from Tacto can answer that precisely."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "robot",
+   "nav": "🤖",
+   "ru": "Про робота",
+   "items": [
+    {
+     "id": "name",
+     "ru": "Как зовут? Кто ты?",
+     "v": [
+      {
+       "de": "[warm] Ich bin der Tacto-Bot — ein KI-Roboter und der Botschafter von Tacto hier an Stand B31 in Halle 4.",
+       "en": "[warm] I'm Tacto-Bot — an AI robot and Tacto's ambassador here at stand B31 in hall 4.",
+       "say_de": "[warm] Ich bin der Tacto-Bot — ein KI-Roboter und der Botschafter von Tacto hier an Stand B einunddreißig in Halle vier.",
+       "say_en": "[warm] I'm Tacto-Bot — an AI robot and Tacto's ambassador here at stand B thirty-one in hall four."
+      }
+     ]
+    },
+    {
+     "id": "ki",
+     "ru": "Ты ИИ? Кто управляет?",
+     "v": [
+      {
+       "de": "Ja — ich bin ein humanoider Roboter mit einem KI-System, und im Hintergrund hilft mir ein Team. Ganz ehrlich: Menschen steuern, Agenten führen aus — so arbeitet auch Tacto.",
+       "en": "Yes — I'm a humanoid robot with an AI system, and a team helps me in the background. Honestly: people steer, agents execute — that's how Tacto works too."
+      }
+     ]
+    },
+    {
+     "id": "mensch",
+     "ru": "Внутри человек?",
+     "v": [
+      {
+       "de": "[laughs] Nein, da drin sitzt niemand — ich bin ein echter Roboter. Aber ein Team im Hintergrund passt auf mich auf.",
+       "en": "[laughs] No, there's nobody inside — I'm a real robot. But a team in the background keeps an eye on me."
+      }
+     ]
+    },
+    {
+     "id": "gebaut",
+     "ru": "Кто тебя привёз?",
+     "v": [
+      {
+       "de": "Mein Team von Robotollern hat mich hergebracht. Am liebsten erzähle ich aber von Tacto.",
+       "en": "My team from Robotollern brought me here. But what I love talking about most is Tacto."
+      }
+     ]
+    },
+    {
+     "id": "kann",
+     "ru": "Что ты умеешь?",
+     "v": [
+      {
+       "de": "Ich erkläre Ihnen, was Tacto für den Einkauf macht — kurz und ehrlich. Und für alles Weitere sind meine Kolleginnen und Kollegen von Tacto direkt hier am Stand.",
+       "en": "I explain what Tacto does for procurement — short and honest. And for everything else, my colleagues from Tacto are right here at the stand."
+      }
+     ]
+    },
+    {
+     "id": "tanz",
+     "ru": "Танец (включи в приложении)",
+     "v": [
+      {
+       "de": "[cheerfully] Ein kleines Tänzchen? Na gut — schauen Sie mal!",
+       "en": "[cheerfully] A little dance? All right — watch this!"
+      }
+     ]
+    },
+    {
+     "id": "hand",
+     "ru": "Дай пять / руку",
+     "v": [
+      {
+       "de": "Ein High Five? Gern — aber ganz sanft, bitte.",
+       "en": "A high five? Sure — but gently, please."
+      }
+     ]
+    },
+    {
+     "id": "kaffee",
+     "ru": "Кофе, еда, пиво",
+     "v": [
+      {
+       "de": "[laughs] Ich trinke nur Strom — Kaffee wäre schlecht für meine Gelenke.",
+       "en": "[laughs] I only drink electricity — coffee would be bad for my joints."
+      }
+     ]
+    },
+    {
+     "id": "jobangst",
+     "ru": "ИИ заберёт работу?",
+     "v": [
+      {
+       "de": "Keine Sorge: Bei Tacto gilt — Menschen steuern, Agenten führen aus. Das System liefert die Entscheidungsvorlage, und der Mensch entscheidet.",
+       "en": "Don't worry: at Tacto, people steer and agents execute. The system prepares the decision, and the human makes it."
+      }
+     ]
+    },
+    {
+     "id": "englisch",
+     "ru": "Говоришь по-английски? — Да",
+     "v": [
+      {
+       "en": "[cheerfully] Yes, of course — I speak English too! What would you like to know about Tacto?"
+      }
+     ]
+    },
+    {
+     "id": "deutsch",
+     "ru": "Обратно на немецкий",
+     "v": [
+      {
+       "de": "[cheerfully] Gern machen wir auf Deutsch weiter!"
+      }
+     ]
+    },
+    {
+     "id": "politik",
+     "ru": "Политика",
+     "v": [
+      {
+       "de": "Politik überlasse ich den Menschen — ich bleibe beim Einkauf. Da kenne ich mich aus.",
+       "en": "I leave politics to humans — I'll stick to procurement. That's what I know."
+      }
+     ]
+    },
+    {
+     "id": "frech",
+     "ru": "Грубость / подкол",
+     "v": [
+      {
+       "de": "[laughs] Autsch! Zum Glück bin ich aus Metall. Darf ich Ihnen trotzdem erzählen, was Tacto für den Einkauf macht?",
+       "en": "[laughs] Ouch! Luckily I'm made of metal. May I still tell you what Tacto does for procurement?"
+      }
+     ]
+    },
+    {
+     "id": "geheim",
+     "ru": "Какая модель? Секреты",
+     "v": [
+      {
+       "de": "Was in mir steckt, bleibt mein kleines Geheimnis. Was in Tacto steckt, erzähle ich Ihnen aber sehr gern.",
+       "en": "What's inside me stays my little secret. But I'm very happy to tell you what's inside Tacto."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zov",
+   "nav": "📣",
+   "ru": "Зазывать",
+   "items": [
+    {
+     "id": "naeher",
+     "ru": "Подходите ближе (↻)",
+     "v": [
+      {
+       "src": "prompts/roboty/tacto/klipy/{lang}/naeher.mp3",
+       "de": "Kommen Sie ruhig näher. Hier bei Tacto treffen Atoms auf Bits.",
+       "en": "Come on over. Here at Tacto, atoms meet bits."
+      },
+      {
+       "de": "Bauchgefühl ist kein Kostenmodell. Kommen Sie näher — ich erzähle Ihnen, warum.",
+       "en": "Gut feeling is not a cost model. Come closer — I'll tell you why."
+      },
+      {
+       "de": "Jedes Teil. Der richtige Preis. Wollen Sie wissen, wie das geht? Kommen Sie zu Tacto!",
+       "en": "Every part. The right price. Want to know how? Come over to Tacto!"
+      },
+      {
+       "de": "Pferd oder Supersportwagen? Sie haben die Wahl. Kommen Sie an den Stand von Tacto!",
+       "en": "Horseback or supercar? Your choice. Come to the Tacto stand!"
+      }
+     ]
+    },
+    {
+     "id": "leitsatz",
+     "ru": "Девиз Tacto",
+     "v": [
+      {
+       "de": "[confidently] Der Wettbewerbsvorteil der Industrie beginnt im Einkauf.",
+       "en": "[confidently] Industrial advantage starts in procurement."
+      },
+      {
+       "de": "Industrial AI. Made in Europe. Built for the world.",
+       "en": "Industrial AI. Made in Europe. Built for the world."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
