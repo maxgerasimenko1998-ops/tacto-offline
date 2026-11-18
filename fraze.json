@@ -1,7 +1,7 @@
 {
  "title": "Tacto-Bot · без облака",
  "short": "Tacto · без облака",
- "version": "18.11.2026 Tacto offline · 1",
+ "version": "18.11.2026 Tacto offline · 2",
  "color": "#9b7bff",
  "kesh": "tacto-offline",
  "voice": "aTTiK3YzK3dXETpuDE2h",
@@ -33,6 +33,14 @@
       {
        "de": "[warm] Guten Tag! Ich bin der Tacto-Bot — ein KI-Roboter, und ich erzähle Ihnen gern, was Tacto für den Einkauf der produzierenden Industrie macht.",
        "en": "[warm] Good day! I'm Tacto-Bot — an AI robot, and I'd love to tell you what Tacto does for procurement in manufacturing."
+      },
+      {
+       "de": "[warm] Guten Tag und herzlich willkommen am Stand von Tacto! Ich bin der Tacto-Bot, ein KI-Roboter. Darf ich Ihnen in einem Satz sagen, was Tacto macht?",
+       "en": "[warm] Good day and welcome to the Tacto stand! I'm Tacto-Bot, an AI robot. May I tell you in one sentence what Tacto does?"
+      },
+      {
+       "de": "[cheerfully] Hallo! Ich bin der Tacto-Bot — ein KI-Roboter. Und ich habe gleich eine Frage an Sie: Wissen Sie, was jedes Ihrer Teile kosten sollte?",
+       "en": "[cheerfully] Hello! I'm Tacto-Bot — an AI robot. And I have a question for you right away: do you know what each of your parts should cost?"
       }
      ]
     },
@@ -48,7 +56,7 @@
     },
     {
      "id": "laut",
-     "ru": "Не расслышал (1→2→3)",
+     "ru": "Не расслышал — повтори",
      "v": [
       {
        "de": "Pardon, hier ist es gerade etwas laut. Kommen Sie ruhig einen Schritt näher und sagen Sie es bitte noch einmal.",
@@ -59,8 +67,16 @@
        "en": "Sorry, I didn't quite catch that. Once more, please — a little louder?"
       },
       {
-       "de": "Es ist wirklich laut hier. Meine Kolleginnen und Kollegen von Tacto stehen direkt am Stand und erklären Ihnen gern alles in Ruhe.",
-       "en": "It really is loud in here. My colleagues from Tacto are right here at the stand and will gladly explain everything in peace."
+       "de": "Wie bitte? Mein Mikrofon hat gerade mit der Halle gekämpft. Sagen Sie es mir bitte noch einmal?",
+       "en": "Sorry? My microphone was just fighting the hall. Could you say that again, please?"
+      },
+      {
+       "de": "[apologetic] Oh, das habe ich leider nicht verstanden. Sprechen Sie ruhig etwas lauter — ich bin ganz Ohr.",
+       "en": "[apologetic] Oh, I'm afraid I didn't understand that. Feel free to speak a bit louder — I'm all ears."
+      },
+      {
+       "de": "Entschuldigen Sie — bei dem Trubel hier ist das untergegangen. Noch einmal, ganz langsam?",
+       "en": "Excuse me — that got lost in all the bustle here. Once more, nice and slowly?"
       }
      ]
     },
@@ -90,6 +106,10 @@
       {
        "de": "Das weiß ich nicht, aber meine Kolleginnen und Kollegen von Tacto können das genau beantworten. Sie stehen direkt hier am Stand.",
        "en": "I don't know that, but my colleagues from Tacto can answer it precisely. They're right here at the stand."
+      },
+      {
+       "de": "Es ist wirklich laut hier. Meine Kolleginnen und Kollegen von Tacto stehen direkt am Stand und erklären Ihnen gern alles in Ruhe.",
+       "en": "It really is loud in here. My colleagues from Tacto are right here at the stand and will gladly explain everything in peace."
       }
      ]
     },
@@ -156,6 +176,14 @@
       {
        "de": "Auf Wiedersehen! Und denken Sie dran: Bauchgefühl ist kein Kostenmodell.",
        "en": "Goodbye! And remember: gut feeling is not a cost model."
+      },
+      {
+       "de": "[warm] Vielen Dank für Ihre Zeit! Und wenn Sie mehr wissen wollen: Meine Kolleginnen und Kollegen von Tacto sind direkt hier am Stand.",
+       "en": "[warm] Thank you for your time! And if you'd like to know more: my colleagues from Tacto are right here at the stand."
+      },
+      {
+       "de": "Es war mir eine Freude! Einen schönen Tag noch — und denken Sie dran: Jedes Teil. Der richtige Preis.",
+       "en": "It was a pleasure! Have a great day — and remember: every part, the right price."
       }
      ]
     },
