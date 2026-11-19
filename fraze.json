@@ -1,7 +1,7 @@
 {
  "title": "Tacto-Bot · без облака",
  "short": "Tacto · без облака",
- "version": "18.11.2026 Tacto offline · 6",
+ "version": "19.11.2026 Tacto offline · 7",
  "color": "#9b7bff",
  "kesh": "tacto-offline",
  "voice": "aTTiK3YzK3dXETpuDE2h",
@@ -19,29 +19,30 @@
    "items": [
     {
      "id": "hallo",
-     "ru": "Привет + «спросите о Tacto»",
+     "ru": "Привет + «давайте поговорим»",
      "v": [
       {
-       "de": "[warm] Hallo! Ich bin der Tacto-Bot, ein KI-Roboter von Tacto. Hier ist es laut — bitte sprechen Sie laut. Was möchten Sie über Tacto wissen?",
-       "en": "[warm] Hello! I'm Tacto-Bot, an AI robot from Tacto. It's loud here — please speak up. What would you like to know about Tacto?"
+       "de": "[warm] Hallo, ich bin der Tacto-Bot, KI-Assistent von Tacto. Laut hier, bitte lauter. Fragen Sie mich!",
+       "en": "[warm] Hi, I'm Tacto-Bot, Tacto's AI assistant. It's loud, please speak up. Ask me!"
       },
       {
-       "de": "[cheerfully] Guten Tag! Tacto-Bot hier, der KI-Roboter von Tacto. Es ist laut, also gern laut sprechen. Fragen Sie mich alles über Tacto — womit fangen wir an?",
-       "en": "[cheerfully] Hi there! Tacto-Bot here, Tacto's AI robot. It's noisy, so please speak loudly. Ask me anything about Tacto — where shall we start?"
+       "de": "[cheerfully] Guten Tag, Tacto-Bot hier, ich assistiere Tacto. Es ist laut, also lauter. Reden wir!",
+       "en": "[cheerfully] Good day, Tacto-Bot here, I assist Tacto. It's loud, so louder. Let's talk!"
       },
       {
-       "de": "[warm] Hallo und willkommen! Ich bin der Tacto-Bot und vertrete Tacto. Bitte sprechen Sie laut, hier ist viel los. Was interessiert Sie an Tacto?",
-       "en": "[warm] Hello and welcome! I'm Tacto-Bot, and I represent Tacto. Please speak up, it's busy in here. What interests you about Tacto?"
+       "de": "[warm] Willkommen! Tacto-Bot hier, Assistent von Tacto. Bitte lauter, es ist laut. Lassen Sie uns reden!",
+       "en": "[warm] Welcome! Tacto-Bot here, assistant of Tacto. Louder, please, it's loud. Let's talk!"
       },
       {
-       "de": "[warm] Schön, dass Sie da sind! Ich bin der Tacto-Bot, der KI-Roboter von Tacto. Hier ist es laut — sprechen Sie bitte laut. Was wollten Sie über Tacto schon immer wissen?",
-       "en": "[warm] Great to see you! I'm Tacto-Bot, Tacto's AI robot. It's loud here — please speak up. What have you always wanted to know about Tacto?"
+       "de": "[warm] Hallo! Ich bin der Tacto-Bot und helfe Tacto. Es ist laut, bitte lauter. Fragen Sie mich ruhig!",
+       "en": "[warm] Hello! I'm Tacto-Bot, helping Tacto. It's loud, please speak up. Go ahead, ask me!"
       },
       {
-       "de": "[cheerfully] Hallo! Ich bin der Tacto-Bot, ein KI-Roboter von Tacto. Sprechen Sie bitte laut — hier ist viel los. Fragen Sie mich alles über Tacto: Was interessiert Sie?",
-       "en": "[cheerfully] Hello! I'm Tacto-Bot, an AI robot from Tacto. Please speak loudly — it's busy here. Ask me anything about Tacto: what interests you?"
+       "de": "[cheerfully] Hallo zusammen! Tacto-Bot, KI-Assistent von Tacto. Laut hier, bitte lauter. Was wollen Sie wissen?",
+       "en": "[cheerfully] Hello everyone! Tacto-Bot, Tacto's AI assistant. It's loud, please speak up. What do you want to know?"
       }
-     ]
+     ],
+     "pauzy": 0.1
     },
     {
      "id": "hoere",
